@@ -1,0 +1,440 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f8f9fa;
+    font-family: Arial, sans-serif;
+    margin-top: 20px;
+}
+
+.subtittle {
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.linkTenis {
+    background-color: #f5f6fa;
+    color: black;
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.menuAside {
+    color: black;
+}
+
+.container-fluid {
+    width: 70%;
+    margin: 0 auto;
+}
+
+#header {
+    background-color: #2c3e50;
+    color: white;
+    height: 80%;
+    width: 100%;
+}
+
+.imgHeader {
+    width: 60%;
+    height: 80%;
+    padding: 20px;
+}
+
+.imgHeader img {
+    width: 100%;
+    height: 250px;
+}
+
+.titulo {
+    width: 40%;
+    padding: 20px;
+    text-align: center;
+}
+
+#header {
+    display: flex;
+    justify-content: center;
+}
+
+nav {
+    background-color: #2c3e50;
+    padding: 20px;
+}
+
+#menu {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    gap: 30px;
+}
+
+.container-1 {
+    padding: 20px;
+    width: 100%;
+    height: 650px;
+}
+
+.container-1 aside {
+    width: 40%;
+    height: 600px;
+    padding: 20px;
+    background-color: #f5f6fa;
+    float: left;
+}
+
+aside a {
+    text-decoration: none;
+    color: white;
+    display: block;
+}
+
+aside ul {
+    list-style: none;
+    margin-bottom: 25px;
+}
+
+.container-1 main {
+    width: 60%;
+    height: 600px;
+    background-color: #f5f6fa;
+    float: right;
+}
+
+.container-1 .aside-container div {
+    display: flex;
+    justify-content: center;
+}
+
+.container-1 .main-container div {
+    display: flex;
+    justify-content: center;
+}
+
+.images-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.images-container img {
+    height: 200px;
+    width: 200px;
+    padding: 10px;
+}
+
+.images-container .text-container {
+    text-align: center;
+}
+
+article h2 {
+    text-align: center;
+    padding: 20px;
+}
+
+.sneakers-container {
+    background-color: #f5f6fa;
+    height: 200px;
+    width: 100%;
+    padding: 15px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.sneakers-container .images img {
+    width: 100%;
+    height: 150px;
+}
+
+.footer {
+    background-color: #2c3e50;
+    color: white;
+    height: 50px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+/* Tablets */
+@media (max-width: 992px) {
+    .container-fluid {
+        width: 90%;
+    }
+
+    #header {
+        flex-direction: column;
+    }
+
+    .imgHeader,
+    .titulo {
+        width: 100%;
+    }
+
+    .container-1 {
+        height: auto;
+    }
+
+    .container-1 aside {
+        width: 100%;
+        height: auto;
+        float: none;
+        margin-bottom: 20px;
+    }
+
+    .container-1 main {
+        width: 100%;
+        height: auto;
+        float: none;
+    }
+}
+
+/* Teléfonos */
+@media (max-width: 768px) {
+    body {
+        margin-top: 10px;
+    }
+
+    .container-fluid {
+        width: 100%;
+        padding: 0 10px;
+    }
+
+    #header {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        height: auto;
+    }
+
+    .imgHeader {
+        width: 100%;
+        padding: 15px;
+        height: auto;
+    }
+
+    .imgHeader img {
+        height: auto;
+        max-height: 200px;
+    }
+
+    .titulo {
+        width: 100%;
+        padding: 15px;
+    }
+
+    .titulo p {
+        font-size: 14px;
+        line-height: 1.5;
+    }
+
+    .subtittle {
+        padding: 15px 10px;
+    }
+
+    .subtittle h3 {
+        font-size: 1.3rem;
+    }
+
+    .linkTenis {
+        padding: 10px 5px;
+    }
+
+    .linkTenis .row {
+        gap: 10px;
+    }
+
+    .linkTenis .col {
+        padding: 8px 5px;
+    }
+
+    .linkTenis a {
+        font-size: 14px;
+        display: block;
+        padding: 8px;
+    }
+
+    nav {
+        padding: 10px;
+    }
+
+    #menu {
+        flex-direction: column;
+        gap: 15px;
+        align-items: center;
+        padding: 0;
+    }
+
+    #menu li {
+        width: 100%;
+        text-align: center;
+    }
+
+    .container-1 {
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        padding: 10px;
+    }
+
+    .container-1 aside {
+        width: 100%;
+        height: auto;
+        float: none;
+        margin-bottom: 20px;
+        padding: 15px;
+    }
+
+    .container-1 aside h3 {
+        font-size: 1.2rem;
+    }
+
+    .container-1 aside p {
+        font-size: 14px;
+        line-height: 1.6;
+    }
+
+    .container-1 main {
+        width: 100%;
+        height: auto;
+        float: none;
+        padding: 10px;
+    }
+
+    article {
+        margin-bottom: 20px;
+    }
+
+    article h2 {
+        font-size: 1.3rem;
+        padding: 15px 10px;
+    }
+
+    .article-container {
+        padding: 10px;
+    }
+
+    .images-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+
+    .images-container > div {
+        width: 100%;
+    }
+
+    .images-container img {
+        width: 100%;
+        max-width: 300px;
+        height: auto;
+        padding: 5px;
+    }
+
+    .text-container {
+        padding: 10px;
+        width: 100%;
+    }
+
+    .text-container p {
+        font-size: 14px;
+        line-height: 1.6;
+        text-align: justify;
+    }
+
+    .sneakers-container {
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+        gap: 15px;
+        padding: 15px 10px;
+    }
+
+    .sneakers-container .images {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    .sneakers-container .images img {
+        width: 100%;
+        height: auto;
+        max-height: 200px;
+    }
+
+    #carouselExampleIndicators {
+        width: 100% !important;
+        max-width: 400px;
+        height: auto !important;
+        padding: 0 15px;
+    }
+
+    .carousel-inner {
+        height: 300px !important;
+    }
+
+    .carousel-item img {
+        height: 300px !important;
+        object-fit: contain !important;
+    }
+
+    .footer {
+        flex-direction: column;
+        height: auto;
+        gap: 10px;
+        text-align: center;
+        padding: 15px 10px;
+    }
+
+    .footer-content {
+        margin: 5px 0;
+    }
+
+    .footer-content p {
+        font-size: 14px;
+        margin: 0;
+    }
+}
+
+/* Teléfonos pequeños */
+@media (max-width: 480px) {
+    .titulo p {
+        font-size: 13px;
+    }
+
+    .subtittle h3,
+    article h2 {
+        font-size: 1.1rem;
+    }
+
+    .linkTenis a {
+        font-size: 12px;
+        padding: 6px;
+    }
+
+    .container-1 aside p,
+    .text-container p {
+        font-size: 13px;
+    }
+
+    #carouselExampleIndicators {
+        max-width: 100%;
+    }
+
+    .carousel-inner {
+        height: 250px !important;
+    }
+
+    .carousel-item img {
+        height: 250px !important;
+    }
+
+    .sneakers-container .images img {
+        max-height: 150px;
+    }
+}
